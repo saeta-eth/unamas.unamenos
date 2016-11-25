@@ -1,0 +1,17 @@
+body{
+    background-color:white !important;
+}
+.boton-form{
+    background-color: #dd6a7b !important;
+    width: 100% !important;
+    color: white !important;
+    padding: 15px;
+}
+.navbar.navbar-inverse{
+    background-color: #747ee6 !important;
+    color: #ffffff
+}
+.form-group.label-static label.control-label, .label-floating{
+        color: black !important;
+    font-size: 20px !important;
+}
