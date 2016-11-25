@@ -1,0 +1,27 @@
+{
+  "name": "unamas.unamenos",
+  "version": "0.0.1",
+  "description": "Hacke a la Violencia Machista",
+  "main": "index.html",
+  "scripts": {
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slorenzo/unamas.unamenos.git"
+  },
+  "keywords": [
+    "hackathon",
+    "violencia",
+    "machista"
+  ],
+  "author": "guazu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slorenzo/unamas.unamenos/issues"
+  },
+  "homepage": "https://github.com/slorenzo/unamas.unamenos#readme",
+  "dependencies": {
+    "bootstrap-material-design": "^0.5.10"
+  }
+}
