@@ -1,0 +1,25 @@
+body{
+  background: url(../img/header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.title-home{
+  text-align: center;
+  color:white;
+}
+
+.subtitle-home{
+  text-align: center;
+  color:white;
+}

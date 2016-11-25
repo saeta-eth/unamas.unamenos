@@ -1,0 +1,25 @@
+body {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
+/* HEADER */
+.navbar-success{
+  background-color: #747ee6 !important;
+}
+
+
+/* BUTTONS */
+.btn{
+  text-transform: none !important;
+}
+
+.btn-success{
+  background-color: #747ee6 !important;
+  height: 65px;
+}
+
+.btn-danger{
+  background-color: #dd6a7b !important;
+  height: 65px;
+}
+
