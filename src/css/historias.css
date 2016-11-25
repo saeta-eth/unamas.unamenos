@@ -9,11 +9,16 @@ header{
   color: black !important;
   font-size: 20px !important;
 }
-
 .form-control, .form-group .form-control{
   background-image: linear-gradient(blue, blue) !important;
 }
 
-.btn-danger{
-  height: 65px;
+.form-group.label-floating label.control-label, 
+.form-group.label-placeholder label.control-label{
+  left:20px !important;
+}
+
+.historia-texto{
+  height: 300px;
+  overflow: auto;
 }

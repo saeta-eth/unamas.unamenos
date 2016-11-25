@@ -17,3 +17,12 @@ header{
 .form-group.label-placeholder label.control-label{
   left:20px !important;
 }
+
+.historia-texto{
+  height: 300px;
+  overflow: auto;
+}
+
+.btn-danger{
+  height: 65px;
+}
