@@ -24,6 +24,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "bootstrap-material-design": "^0.5.10",
-    "jquery": "latest"
+    "jquery": "latest",
+    "underscore": "^1.8.3"
   }
 }

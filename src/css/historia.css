@@ -1,0 +1,19 @@
+body{
+  background-color:white !important;
+}
+header{
+  margin-top: 70px;
+}
+
+.form-group.label-static label.control-label, .label-floating{
+  color: black !important;
+  font-size: 20px !important;
+}
+.form-control, .form-group .form-control{
+  background-image: linear-gradient(blue, blue) !important;
+}
+
+.form-group.label-floating label.control-label, 
+.form-group.label-placeholder label.control-label{
+  left:20px !important;
+}

@@ -7,7 +7,6 @@ body {
   background-color: #747ee6 !important;
 }
 
-
 /* BUTTONS */
 .btn{
   text-transform: none !important;
@@ -21,5 +20,10 @@ body {
 .btn-danger{
   background-color: #dd6a7b !important;
   height: 65px;
+}
+
+.label-danger{
+  background-color: #dd6a7b !important;
+  padding:10px;
 }
 
