@@ -1,17 +1,14 @@
 body{
-    background-color:white !important;
+  background-color:white !important;
 }
 header{
-        margin-top: 70px;
-}
-.boton-form{
-    background-color: #dd6a7b !important;
-    width: 100% !important;
-    color: white !important;
-    padding: 15px;
+  margin-top: 70px;
 }
 
 .form-group.label-static label.control-label, .label-floating{
-        color: black !important;
-    font-size: 20px !important;
+  color: black !important;
+  font-size: 20px !important;
+}
+.form-control, .form-group .form-control{
+  background-image: linear-gradient(blue, blue) !important;
 }
