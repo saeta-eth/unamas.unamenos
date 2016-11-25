@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/slorenzo/unamas.unamenos#readme",
   "dependencies": {
-    "bootstrap-material-design": "^0.5.10"
+    "bootstrap-material-design": "^0.5.10",
+    "bootstrap": "^3",
+    "jquery": "latest"
   }
 }
