@@ -75,6 +75,6 @@ header{
   display: block;
 }
 
-.filters{
+.filters, .search{
   display: none;
 }
