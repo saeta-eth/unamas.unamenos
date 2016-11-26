@@ -32,3 +32,16 @@ header{
 .mis-datos{
   margin-top: 100px !important;
 }
+.title-list{
+  font-size:19px;
+    color: #a0a0a0 !important;
+    margin-left: 15px;
+}
+hr{
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+.title-list a:focus, a:hover {
+    color: #55caf8 !important;
+    text-decoration:none;
+}
