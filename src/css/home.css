@@ -31,3 +31,12 @@ header{
 .btn-success{
   height: 65px;
 }
+
+.btn-quiero:hover{
+  background-color: #009688; 
+}
+
+.btn-necesito:hover{
+  background-color: #f55549; 
+}
+

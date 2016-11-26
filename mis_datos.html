@@ -40,16 +40,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a class="page-scroll" href="#about">No se 1</a>
+              <a class="page-scroll" href="donde-pedir-ayuda.html">Dónde pedir ayuda?</a>
             </li>
             <li>
-              <a class="page-scroll" href="#services">No se 2</a>
+                            <a class="page-scroll" href="como-realizar-una-denuncia.html">Como realizar una denuncia</a>
             </li>
             <li>
-              <a class="page-scroll" href="#portfolio">No se 3</a>
+                            <a class="page-scroll" href="links-utiles.html">Links Utiles</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">No se 3</a>
+              <a class="page-scroll" href="nosotros.html">Nosotros</a>
             </li>
           </ul>
         </div>
@@ -60,29 +60,31 @@
     <section class="mis-datos">
       <div class="container">
         <div class="row">
+          <form id='user-register'>
           <div class="col-lg-8 col-lg-offset-2">
             <div class="form-group label-floating">
               <label for="i1" class="control-label">Usuario</label>
-              <input type="text" class="form-control" id="i1"  placeholder="">
+              <input type="text" name='username'  class="form-control" id="i1" required  placeholder="">
             </div>
             <div class="form-group label-floating is-empty">
               <label for="i2" class="control-label">Edad</label>
-              <input type="text" class="form-control" id="i2" placeholder="">
+              <input type="text" name='age' class="form-control" id="i2"  required  placeholder="">
             </div>
             <div class="form-group label-floating is-empty">
               <label for="i3" class="control-label">Mail</label>
-              <input type="text" class="form-control" id="i3" placeholder="">
+              <input type="text" name='email' class="form-control" id="i3" required placeholder="">
               <p class="help-block">Tu e-mail no será publicado en ningún momento</p>
             </div>
             <div class="form-group label-floating is-empty">
               <label for="i3" class="control-label">Contraseña</label>
-              <input type="password" class="form-control" id="i3" placeholder="">
+              <input type="password" name='password' class="form-control" required id="i3" placeholder="">
             </div>
           </div>
+          </form>
         </div>
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="tu_historia.html"><button class="btn btn-lg btn-raised btn-danger btn-block">Continuar</button></a>
+            <a href="#" id='send-form'><button  class="btn btn-lg btn-raised btn-danger btn-block">Continuar</button></a>
           </div>
         </div>
       </div>
@@ -96,6 +98,14 @@
     <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script>
       $.material.init();
+    </script>
+    <script type="text/javascript" src="">
+      $("#send-form").on('click' , function(){
+      $.post('/http://una-mas-una-menos-jpnavone.c9users.io/users' , $('#user-register').serialize() , function(data){
+          location.href = '/tipo_agresion.html?user=' + data.id;
+      });        
+      })
+
     </script>
   </body>
 </html>
