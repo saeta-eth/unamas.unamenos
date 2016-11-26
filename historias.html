@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Ni Una Mas/ Ni una Menos</title>
+    <title>Contala</title>
     <!-- Bootstrap Core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
@@ -64,6 +64,15 @@
           <div class="alert alert-success" role="alert">
             Gracias por compartir tu historia. Será publicada en unos minutos.
           </div>
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <a href="#" class="btn btn-default" role="button">
+              <i class="material-icons">search</i>
+              <span>BUSCAR</span>
+            </a>
+            <a href="#" class="btn btn-default" role="button">
+              <span>FILTRAR HISTORIAS</span>
+            </a>
+          </div>
           <div class="col-xs-12 text-center">
               <div class="well well-lg">
                <p class="text-left"><span class="label label-danger">QUIERO AYUDAR</span></p>
@@ -86,6 +95,9 @@
     <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script>
       $.material.init();
+      setTimeout(function(){
+        $(".alert-success").slideUp("slow");
+      },5000);
     </script>
   </body>
 </html>

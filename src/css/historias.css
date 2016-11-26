@@ -28,3 +28,30 @@ header{
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+
+.btn-group{
+  margin: 0 0 10px 0;
+  background-color: #fff !important;
+  padding: 5px;
+}
+
+.btn-group > .btn:first-child {
+  border-right: 1px solid !important;
+  border-color: rgba(128, 128, 128, 0.58) !important;
+}
+
+.btn-group > .btn span{
+  font-size: 16px;
+  color: #eaeaea !important;
+}
+
+.btn-group > i{
+  color:black !important;
+}
+
+.btn:not(.btn-raised):not(.btn-link):focus span,
+.btn:not(.btn-raised):not(.btn-link):hover span,
+.input-group-btn .btn:not(.btn-raised):not(.btn-link):focus span,
+.input-group-btn .btn:not(.btn-raised):not(.btn-link):hover span{ 
+  color:black !important;
+}
