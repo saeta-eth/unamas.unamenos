@@ -31,29 +31,11 @@
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span><i class="material-icons">view_headline</i>
-          </button>
-          <a href='/'><span class="title-app">Contala</span></a>
-<a class="navbar-right boton-conta">Contá tu hiostoria</a>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="page-scroll" href="donde-pedir-ayuda.html">Dónde pedir ayuda?</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="como-realizar-una-denuncia.html">Como realizar una denuncia</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="links-utiles.html">Links Utiles</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="nosotros.html">Nosotros</a>
-            </li>
-          </ul>
+          <a class="navbar-brand" href="index.html">
+            <i class="material-icons">arrow_back</i>
+          </a>
+          <a class="boton-conta" href="mis_datos.html">Contá tu historia</a>
         </div>
-        <!-- /.navbar-collapse -->
       </div>
       <!-- /.container -->
     </nav>
@@ -79,7 +61,7 @@
                 <label>
                   <i class="material-icons">search</i>
                 </label>
-                <input autofocus type="text" class="search form-control" />
+                <input autofocus type="text" class="form-control" />
               </div>
             </div>
           </div>
@@ -181,18 +163,25 @@
         $(".alert-success").slideUp("slow");
       }, 5000);
 
-      $("#filters").on("click", function(){
-        $(".search").css("display", "none");
-        $(".filters").toggle();
+      $("#filters").on("click", function(e){
+        e.stopImmediatePropagation();
+        if ($(".search").css("display") !== "none") {
+          $(".search").hide()
+        }
+        $(".filters").show();
       });
 
       $(".apply").on("click", function(){
-        $(".filters").toggle();
+        $(".filters").hide();
       });
 
-      $("#search").on("click", function(){
-        $(".filters").css("display", "none");
-        $(".search").toggle();
+      $("#search").on("click", function(e){
+        e.stopImmediatePropagation();
+        if ($(".filters").css("display") !== "none") {
+          $(".filters").hide()
+        }
+        $(".search").focus();
+        $(".search").show();
       });
     </script>
   </body>

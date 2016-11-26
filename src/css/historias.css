@@ -50,7 +50,7 @@ header{
 
 .btn-group > .btn span{
   font-size: 16px;
-  color: #eaeaea !important;
+  color: #666 !important;
 }
 
 .btn-group > i{
@@ -77,4 +77,19 @@ header{
 
 .filters, .search{
   display: none;
+}
+
+.boton-conta{
+    text-align: right;
+    float: right;
+    color: white;
+    margin-right: 6%;
+    padding: 2%;
+    border: 1px solid white;
+    margin-top: 2%;
+    border-radius: 5px; 
+}
+a:focus, a:hover {
+    color: white !important;
+    
 }
