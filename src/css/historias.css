@@ -1,8 +1,8 @@
 body{
-  background-color:white !important;
+  background-color:#eaeaea !important;
 }
 header{
-  margin-top: 70px;
+  margin-top: 55px;
 }
 
 .form-group.label-static label.control-label, .label-floating{
@@ -19,6 +19,12 @@ header{
 }
 
 .historia-texto{
-  height: 150px;
-  overflow: auto;
+  text-align: left;
+}
+
+.well{
+  line-height: 1.2;
+  border: 1px #dedede solid !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
