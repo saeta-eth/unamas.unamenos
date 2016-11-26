@@ -41,8 +41,8 @@ body, h1, h2, h3, h4, h5, p, a, li {
 .title-app{
   font-size: 24px;
   font-weight: bold;
-  bottom: 10px;
-  position: absolute;
-  left: 40px;
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: -10px;
 }
 
