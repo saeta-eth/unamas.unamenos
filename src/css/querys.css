@@ -14,6 +14,15 @@
   .title-home{
     margin-top:10%;
   }
+.boton-conta{
+    float: right;
+    margin-right: -970px;
+    color: white;
+    padding: 8%;
+    border: 1px solid white;
+    margin-top: 29%;
+    border-radius: 5px;
+}
 }
 @media all and (max-width: 959px) and (min-width: 600px) {
   h1{

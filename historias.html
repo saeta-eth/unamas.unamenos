@@ -128,13 +128,14 @@
                 </select>
               </div>
               <div class="row">
-                <button class="apply center btn btn-sm btn-raised btn-danger">
+                <button id="filtrar" class="apply center btn btn-sm btn-raised btn-danger">
                   Aplicar
                 </button>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 text-center">
+ 
+          <div id="desaparece" class="col-xs-12 text-center">
               <div class="history well well-lg">
                <p class="text-left"><span class="label label-danger">QUIERO AYUDAR</span></p>
                <p class="text-left"><strong>Maria Laura</strong></p>
@@ -206,6 +207,10 @@
         $(".search").focus();
         $(".search").show();
       });
+            $("#filtrar").on("click", function(e){
+            $("#desaparece").fadeOut('slow');
+              
+            });
     </script>
   </body>
 </html>
