@@ -69,12 +69,84 @@
               <i class="material-icons">search</i>
               <span>BUSCAR</span>
             </a>
-            <a href="#" class="btn btn-default" role="button">
+            <a id="filters" href="#" class="btn btn-default" role="button">
               <span>FILTRAR HISTORIAS</span>
             </a>
           </div>
+          <div class="filters row">
+            <div class="well well-lg">
+              <div class="form-group is-empty">
+                <label for="edad" class="control-label">Edad</label>
+                <select autofocus="" class="form-control" for="edad">
+                  <option>
+                    Todas
+                  </option>
+                  <option>
+                    Menores de 18
+                  </option>
+                  <option>
+                    Entre 18 y 30
+                  </option>
+                  <option>
+                    Entre 30 y 60
+                  </option>
+                  <option>
+                    Mas de 60
+                  </option>
+                </select>
+              </div>
+              <div class="form-group is-empty">
+                <label for="agresor" class="control-label">Agresor</label>
+                <select autofocus="" class="form-control" for="agresor">
+                  <option>
+                    Pareja
+                  </option>
+                  <option>
+                    Familiar
+                  </option>
+                  <option>
+                    Jefe
+                  </option>
+                  <option>
+                    Compañero / Amigo
+                  </option>
+                  <option>
+                    Institucion
+                  </option>
+                  <option>
+                    Desconocido
+                  </option>
+                </select>
+              </div>
+              <div class="form-group is-empty">
+                <label for="tipo" class="control-label">Tipo</label>
+                <select autofocus="" class="form-control" for="tipo">
+                  <option>
+                    Fisica
+                  </option>
+                  <option>
+                    Sexual
+                  </option>
+                  <option>
+                    Verbal
+                  </option>
+                  <option>
+                    Psicológica
+                  </option>
+                  <option>
+                    Económica
+                  </option>
+                </select>
+              </div>
+              <div class="row">
+                <button class="apply center btn btn-sm btn-raised btn-danger">
+                  Aplicar
+                </button>
+              </div>
+            </div>
+          </div>
           <div class="col-xs-12 text-center">
-              <div class="well well-lg">
+              <div class="history well well-lg">
                <p class="text-left"><span class="label label-danger">QUIERO AYUDAR</span></p>
                <p class="text-left"><strong>Maria Laura</strong></p>
                <p class="historia-texto">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo.</p>
@@ -98,6 +170,12 @@
       setTimeout(function(){
         $(".alert-success").slideUp("slow");
       },5000);
+      $("#filters").on("click", function(){
+        $(".filters").toggle();
+      });
+      $(".apply").on("click", function(){
+        $(".filters").toggle();
+      });
     </script>
   </body>
 </html>
