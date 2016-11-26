@@ -1,10 +1,21 @@
-body {
+body, h1, h2, h3, h4, h5, p, a, li {
   font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
 /* HEADER */
 .navbar-success{
-  background-color: #747ee6 !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4c2ea+0,e4c2ea+0,5c5bd1+0,8662d3+100 */
+  background: rgb(228,194,234); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(228,194,234,1) 0%, rgba(228,194,234,1) 0%, rgba(92,91,209,1) 0%, rgba(134,98,211,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(228,194,234,1) 0%,rgba(228,194,234,1) 0%,rgba(92,91,209,1) 0%,rgba(134,98,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(228,194,234,1) 0%,rgba(228,194,234,1) 0%,rgba(92,91,209,1) 0%,rgba(134,98,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4c2ea', endColorstr='#8662d3',GradientType=1 ); /* IE6-9 */
+
+  min-height: 56px !important;
+}
+
+.navbar-toggle{
+  margin-bottom: 0 !important;
 }
 
 /* BUTTONS */
@@ -14,14 +25,24 @@ body {
 
 .btn-success{
   background-color: #747ee6 !important;
+  font-size: 20px !important;
 }
 
 .btn-danger{
   background-color: #dd6a7b !important;
+  font-size: 20px !important;
 }
 
 .label-danger{
   background-color: #dd6a7b !important;
   padding:10px;
+}
+
+.title-app{
+  font-size: 24px;
+  font-weight: bold;
+  bottom: 10px;
+  position: absolute;
+  left: 40px;
 }
 
