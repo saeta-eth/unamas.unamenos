@@ -18,17 +18,19 @@ header{
   height: 65px;
 }
 
-.title-datos{
-    font-size: 29px;
-    margin-left: 74px;
-    margin-top: 10px;
-    position: absolute;
+.title-tipo-agresion{
+  font-size: 29px;
+  margin-left: 74px;
+  margin-top: 20px;
+  position: absolute;
+  text-align: center;
+  line-height: 1;
 }
 
 .navbar-success{
   height: 100px !important;
 }
 
-.mis-datos{
+.tipo-agresion{
   margin-top: 100px !important;
 }
