@@ -43,6 +43,9 @@
     <section class="historias" id="historias">
       <div class="container">
         <div class="row">
+          <div class="alert alert-success" role="alert">
+            Gracias por compartir tu historia. Será publicada en unos minutos.
+          </div>
           <div id="search" class="btn-group btn-group-justified" role="group" aria-label="...">
             <a href="#" class="btn btn-default" role="button">
               <i class="material-icons">search</i>
@@ -156,6 +159,10 @@
     <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script>
       $.material.init();
+      setTimeout(function(){
+        $(".alert-success").slideUp("slow");
+      }, 5000);
+
       $("#filters").on("click", function(e){
         e.stopImmediatePropagation();
         if ($(".search").css("display") !== "none") {
