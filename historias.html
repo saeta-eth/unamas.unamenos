@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Ni Una Mas/ Ni una Menos</title>
+    <title>Contala</title>
     <!-- Bootstrap Core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.min.css" rel="stylesheet" />
@@ -64,8 +64,99 @@
           <div class="alert alert-success" role="alert">
             Gracias por compartir tu historia. Será publicada en unos minutos.
           </div>
+          <div id="search" class="btn-group btn-group-justified" role="group" aria-label="...">
+            <a href="#" class="btn btn-default" role="button">
+              <i class="material-icons">search</i>
+              <span>BUSCAR</span>
+            </a>
+            <a id="filters" href="#" class="btn btn-default" role="button">
+              <span>FILTRAR HISTORIAS</span>
+            </a>
+          </div>
+          <div class="search row">
+            <div class="well well-lg">
+              <div class="form-group is-empty">
+                <label>
+                  <i class="material-icons">search</i>
+                </label>
+                <input autofocus type="text" class="search form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="filters row">
+            <div class="well well-lg">
+              <div class="form-group is-empty">
+                <label for="edad" class="control-label">Edad</label>
+                <select autofocus class="form-control" for="edad">
+                  <option>
+                    Todas
+                  </option>
+                  <option>
+                    Menores de 18
+                  </option>
+                  <option>
+                    Entre 18 y 30
+                  </option>
+                  <option>
+                    Entre 30 y 60
+                  </option>
+                  <option>
+                    Mas de 60
+                  </option>
+                </select>
+              </div>
+              <div class="form-group is-empty">
+                <label for="agresor" class="control-label">Agresor</label>
+                <select autofocus="" class="form-control" for="agresor">
+                  <option>
+                    Pareja
+                  </option>
+                  <option>
+                    Familiar
+                  </option>
+                  <option>
+                    Jefe
+                  </option>
+                  <option>
+                    Compañero / Amigo
+                  </option>
+                  <option>
+                    Institucion
+                  </option>
+                  <option>
+                    Desconocido
+                  </option>
+                </select>
+              </div>
+              <div class="form-group is-empty">
+                <label for="tipo" class="control-label">Tipo</label>
+                <select autofocus="" class="form-control" for="tipo">
+                  <option>
+                    Fisica
+                  </option>
+                  <option>
+                    Sexual
+                  </option>
+                  <option>
+                    Verbal
+                  </option>
+                  <option>
+                    Psicológica
+                  </option>
+                  <option>
+                    Económica
+                  </option>
+                </select>
+              </div>
+              <div class="row">
+                <button class="apply center btn btn-sm btn-raised btn-danger">
+                  Aplicar
+                </button>
+              </div>
+            </div>
+          </div>
           <div class="col-xs-12 text-center">
-              <div class="well well-lg">
+              <div class="history well well-lg">
                <p class="text-left"><span class="label label-danger">QUIERO AYUDAR</span></p>
                <p class="text-left"><strong>Maria Laura</strong></p>
                <p class="historia-texto">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo.</p>
@@ -86,6 +177,23 @@
     <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script>
       $.material.init();
+      setTimeout(function(){
+        $(".alert-success").slideUp("slow");
+      }, 5000);
+
+      $("#filters").on("click", function(){
+        $(".search").css("display", "none");
+        $(".filters").toggle();
+      });
+
+      $(".apply").on("click", function(){
+        $(".filters").toggle();
+      });
+
+      $("#search").on("click", function(){
+        $(".filters").css("display", "none");
+        $(".search").toggle();
+      });
     </script>
   </body>
 </html>
