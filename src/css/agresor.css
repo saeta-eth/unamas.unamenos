@@ -18,17 +18,17 @@ header{
   height: 65px;
 }
 
-.title-datos{
-    font-size: 29px;
-    margin-left: 54px;
-    margin-top: 40px;
-    position: absolute;
+.title-agregar{
+  font-size: 25px;
+  margin-left: 55px;
+  margin-top: 30px;
+  position: absolute;
 }
 
 .navbar-success{
   height: 100px !important;
 }
 
-.mis-datos{
+.quien-agresor{
   margin-top: 100px !important;
 }
