@@ -1,25 +1,38 @@
 @media all and (min-width: 960px) {
   h1{
-      font-size: 74px;
+      font-size: 50px;
   }
   h4{
-    font-size: 44px;
+    font-size: 25px;
+  }
+  #actions{
+    margin-top:10%;
+  }
+  .title-home{
+    margin-top:10%;
   }
 }
 @media all and (max-width: 959px) and (min-width: 600px) {
   h1{
-      font-size: 15vw;
+      font-size: 7vw;
   }
   h4{
-    font-size: 10vw;
+    font-size: 5vw;
+  }
+  #actions{
+    margin-top:10%;
+  }
+  .title-home{
+    margin-top:10%;
   }
 }
 
 @media all and (max-width: 599px) and (min-width: 50px) {
   h1{
-      font-size: 10vw;
+      font-size: 8vw;
   }
   h4{
-    font-size: 6vw;
+    font-size: 5vw;
+    line-height: 1.6;
   }
 }
