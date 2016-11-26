@@ -33,15 +33,34 @@ header{
   margin-top: 100px !important;
 }
 .title-list{
-  font-size:19px;
-    color: #a0a0a0 !important;
-    margin-left: 15px;
+font-size: 19px;
+    color: black !important;
+    padding: 6%;
 }
 hr{
-  margin-bottom: 10px;
-  margin-top:10px;
+  margin-bottom: 0px;
+  margin-top:0px;
 }
-.title-list a:focus, a:hover {
-    color: #55caf8 !important;
+.title-list:focus, .title-list:hover {
+    color: black !important;
     text-decoration:none;
+    background-color:#eaeaea !important;
+    
+}
+a{
+  color:#666 !important;
+}
+p {
+    margin: 0 0 0px;
+}
+
+.navbar .navbar-brand, .navbar .navbar-brand:focus, .navbar .navbar-brand:hover {
+    color: inherit !important;
+    background-color: transparent !important;
+}
+
+.navbar .navbar-nav>li>a {
+    color: inherit !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

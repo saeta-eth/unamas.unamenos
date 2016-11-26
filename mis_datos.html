@@ -84,7 +84,7 @@
         </div>
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-center">
-            <a href="#" id='send-form'><button  class="btn btn-lg btn-raised btn-danger btn-block">Continuar</button></a>
+            <a href="/tipo_agresion.html" id='send-form'><button  class="btn btn-lg btn-raised btn-danger btn-block">Continuar</button></a>
           </div>
         </div>
       </div>
@@ -98,14 +98,6 @@
     <script src="node_modules/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script>
       $.material.init();
-    </script>
-    <script type="text/javascript" src="">
-      $("#send-form").on('click' , function(){
-      $.post('/http://una-mas-una-menos-jpnavone.c9users.io/users' , $('#user-register').serialize() , function(data){
-          location.href = '/tipo_agresion.html?user=' + data.id;
-      });        
-      })
-
     </script>
   </body>
 </html>
